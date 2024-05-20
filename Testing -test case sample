@@ -1,0 +1,101 @@
+Test Cases for Login Functionality
+
+
+Test Case 1: Login Functionality - Valid Credentials
+Test Case ID	TC001
+Test Case Title	Login Functionality - Valid Credentials
+Test Case Description	Verify that the login functionality accepts valid credentials and grants access to the user.
+Test Steps	1.Launch the application by double-clicking on the application icon.
+2.Wait for the application to load and navigate to the login page by clicking on the "Login" link in the main menu.
+3.Enter the valid username "testuser" in the username field.
+4.Enter the valid password "Password123" in the password field.
+5.Click on the "Login" button to submit the credentials.
+Test Data	1.Valid username: "testuser"
+2.Valid password: "Password123"
+Expected Results	The user should be granted access to the system, and the home page should be displayed with relevant user-specific information.
+Actual Results	User successfully logged in and directed to the home page.
+Pass / Fail	Pass
+
+Test Case 2: Login Functionality - Invalid Credentials
+Test Case ID	TC002
+Test Case Title	Login Functionality - Invalid Credentials
+Test Case Description	Verify that the login functionality displays an error message for invalid credentials
+Test Steps	1.Launch the application by double-clicking on the application icon.
+2.Wait for the application to load and navigate to the login page by clicking on the "Login" link in the main menu.
+3.Enter an invalid username in the username field (e.g., "invaliduser").
+4.Enter an invalid password in the password field (e.g., "wrongpassword").
+5.Click on the "Login" button to submit the credentials.
+Test Data	1.Invalid username: "invaliduser"
+2.Invalid password: "wrongpassword"
+Expected Results	An error message should be displayed indicating that the login credentials are incorrect.
+Actual Results	Error message displayed: "Invalid username or password. Please try again."
+Pass / Fail	Pass
+
+
+Test Case 3: Login Functionality - Forgot Password
+Test Case ID	TC003
+Test Case Title	Login Functionality - Forgot Password
+Test Case Description	Verify that the user can reset their password using the "Forgot Password" functionality
+Test Steps	1.Launch the application by double-clicking on the application icon.
+2.Wait for the application to load and navigate to the login page by clicking on the "Login" link in the main menu.
+3.Click on the "Forgot Password" link on the login page.
+4.Enter the registered email address in the provided field (e.g., "testuser@example.com").
+5.Click on the "Reset Password" button.
+Test Data	Registered email address: "testuser@example.com"
+Expected Results	A password reset email should be sent to the registered email address, allowing the user to reset their password.
+Actual Results	Password reset email sent to the registered email address with instructions to reset the password.
+Pass / Fail	Pass
+
+
+
+
+
+Test Cases for ATM Functionality
+
+
+
+Test Case 1: ATM Withdrawal - Sufficient Funds
+Test Case ID	TC001
+Test Case Title	ATM Withdrawal - Sufficient Funds
+Test Case Description	Verify that a user with sufficient funds can successfully withdraw cash from the ATM
+Test Steps	1.Insert the ATM card into the card slot.
+2.Enter the PIN on the keypad.
+3.Select the "Withdraw" option on the screen.
+4.Enter the desired withdrawal amount (within the available balance).
+5.Confirm the withdrawal amount.
+6.Collect the dispensed cash from the cash dispenser.
+7.Retrieve the ATM card from the card slot.
+Test Data	Valid ATM card, PIN, and sufficient account balance.
+Expected Results	The ATM should dispense the requested amount of cash, and the user's account balance should be updated accordingly.
+Actual Results	The ATM dispensed the requested cash, and the account balance was reduced by the withdrawn amount.
+Pass / Fail	Pass
+
+Test Case 2: ATM Withdrawal - Insufficient Funds
+Test Case ID	TC002
+Test Case Title	ATM Withdrawal - Insufficient Funds
+Test Case Description	Verify that a user with insufficient funds receives an appropriate error message when attempting to withdraw cash from the ATM
+Test Steps	1.Insert the ATM card into the card slot.
+2.Enter the PIN on the keypad.
+3.Select the "Withdraw" option on the screen.
+4.Enter an amount greater than the available balance.
+5.Confirm the withdrawal amount.
+6.Check for an error message indicating insufficient funds.
+Test Data	Valid ATM card, PIN, and an account balance lower than the requested withdrawal amount.
+Expected Results	The ATM should display an error message indicating that the account has insufficient funds to complete the transaction.
+Actual Results	The ATM displayed an error message: "Insufficient funds. Please choose a lower amount."
+Pass / Fail	Pass
+
+Test Case 3: ATM Balance Inquiry
+Test Case ID	TC003
+Test Case Title	ATM Balance Inquiry
+Test Case Description	Verify that a user can successfully check their account balance through the ATM
+Test Steps	1.Insert the ATM card into the card slot.
+2.Enter the PIN on the keypad.
+3.Select the "Balance Inquiry" option on the screen.
+4.Wait for the ATM to process the request.
+5.Read and note down the displayed account balance.
+6.Retrieve the ATM card from the card slot.
+Test Data	Valid ATM card and PIN.
+Expected Results	The ATM should display the user's current account balance on the screen.
+Actual Results	The ATM displayed the account balance as $2,500.00.
+Pass / Fail	Pass
